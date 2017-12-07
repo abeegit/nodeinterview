@@ -3,4 +3,15 @@
 */
 module.exports = exports = function(input, value) {
 //  complete the function
+  var found = 0;
+  for (var i = 0; i < input.length; i++) {
+    if (value === input[i]) {
+      found = i;
+    }
+  }
+  if (found === 0) {
+    return -1;
+  } else {
+    return found;
+  }
 };
